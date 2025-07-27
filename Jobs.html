@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder India - Find Your Perfect Job Opportunity</title>
+    <meta name="description" content="Discover thousands of job opportunities across India. Find jobs for male, female, freshers, government positions, part-time work, and IT technology roles.">
+    <meta name="keywords" content="jobs, careers, employment, India, hiring, job search, government jobs, IT jobs, fresher jobs">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JobFinder India - Find Your Perfect Job">
+    <meta property="og:description" content="Discover thousands of job opportunities across India">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jobfinder-india.com">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vedhata/By-VED@main/Jobs.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="brand-title">JobFinder India</h1>
+                    <span class="brand-tagline">Your Career Partner</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="#all-jobs" class="nav-link">All Jobs</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-outline">Login</a>
+                    <a href="#" class="btn btn-primary">Post Job</a>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Dream Job in India</h1>
+                <p class="hero-subtitle">Discover thousands of opportunities across all categories - from government jobs to IT positions, part-time work to full-time careers.</p>
+                
+                <div class="search-container">
+                    <form class="search-form" id="search-form">
+                        <div class="search-field">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="job-search" placeholder="Job title, skills, or company..." autocomplete="off">
+                            <div class="search-suggestions" id="job-suggestions"></div>
+                        </div>
+                        <div class="search-field">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" id="location-search" placeholder="City, state, or remote..." autocomplete="off">
+                            <div class="search-suggestions" id="location-suggestions"></div>
+                        </div>
+                        <button type="submit" class="btn btn-search">
+                            <i class="fas fa-search"></i>
+                            Search Jobs
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2,79,890+</span>
+                        <span class="stat-label">Active Jobs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15,000+</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5,50,000+</span>
+                        <span class="stat-label">Job Seekers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="assets/images/hero-placeholder.jpg" alt="Professional job seekers in India" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories Overview -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse Jobs by Category</h2>
+                <p class="section-subtitle">Find opportunities that match your profile and preferences</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="male">
+                    <div class="category-icon">
+                        <i class="fas fa-male"></i>
+                    </div>
+                    <h3 class="category-title">Jobs for Male</h3>
+                    <p class="category-count">45,230 jobs available</p>
+                    <p class="category-description">Opportunities in construction, security, sales, and technical roles</p>
+                    <a href="#jobs-male" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card" data-category="female">
+                    <div class="category-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3 class="category-title">Jobs for Female</h3>
+                    <p class="category-count">38,450 jobs available</p>
+                    <p class="category-description">Flexible roles in HR, teaching, healthcare, and administration</p>
+                    <a href="#jobs-female" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card" data-category="freshers">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="category-title">Jobs for Freshers</h3>
+                    <p class="category-count">62,180 jobs available</p>
+                    <p class="category-description">Entry-level positions and internships for new graduates</p>
+                    <a href="#jobs-freshers" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card" data-category="government">
+                    <div class="category-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="category-title">Government Jobs</h3>
+                    <p class="category-count">15,670 jobs available</p>
+                    <p class="category-description">Secure positions in public sector and government organizations</p>
+                    <a href="#jobs-government" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card" data-category="parttime">
+                    <div class="category-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="category-title">Part-time Jobs</h3>
+                    <p class="category-count">28,940 jobs available</p>
+                    <p class="category-description">Flexible work options for students and homemakers</p>
+                    <a href="#jobs-parttime" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card" data-category="it">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="category-title">IT & Technology</h3>
+                    <p class="category-count">89,320 jobs available</p>
+                    <p class="category-description">Software development, data analysis, and tech support roles</p>
+                    <a href="#jobs-it" class="category-link">View Jobs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs for Male Section -->
+    <section id="jobs-male" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-male"></i>
+                    Jobs for Male
+                </h2>
+                <p class="category-section-subtitle">45,230 opportunities across various industries</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="job-badge featured">Featured</span>
+                    </div>
+                    <h3 class="job-title">Security Supervisor</h3>
+                    <p class="company-name">SecureGuard Services</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-5 LPA</span>
+                    </div>
+                    <p class="job-description">Lead security operations, manage team of guards, ensure safety protocols. Experience in security management preferred.</p>
+                    <div class="job-tags">
+                        <span class="tag">Security</span>
+                        <span class="tag">Management</span>
+                        <span class="tag">Team Lead</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 2 days ago</span>
+                        <a href="tel:+918740978309" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <span class="job-badge">Urgent</span>
+                    </div>
+                    <h3 class="job-title">Delivery Executive</h3>
+                    <p class="company-name">FastDelivery Logistics</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Delhi, NCR</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹2-4 LPA</span>
+                    </div>
+                    <p class="job-description">Handle package deliveries across Delhi NCR. Own vehicle preferred. Good communication skills required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Delivery</span>
+                        <span class="tag">Logistics</span>
+                        <span class="tag">Vehicle Required</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <span class="job-badge">New</span>
+                    </div>
+                    <h3 class="job-title">Maintenance Technician</h3>
+                    <p class="company-name">Industrial Solutions Ltd</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹4-7 LPA</span>
+                    </div>
+                    <p class="job-description">Maintain industrial equipment, troubleshoot mechanical issues. ITI or Diploma in Mechanical Engineering required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Maintenance</span>
+                        <span class="tag">Technical</span>
+                        <span class="tag">ITI/Diploma</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 3 hours ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <span class="job-badge">Hot</span>
+                    </div>
+                    <h3 class="job-title">Sales Executive</h3>
+                    <p class="company-name">SalesPro India</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-8 LPA</span>
+                    </div>
+                    <p class="job-description">Drive sales growth, build client relationships, achieve targets. Experience in B2B sales preferred.</p>
+                    <div class="job-tags">
+                        <span class="tag">Sales</span>
+                        <span class="tag">B2B</span>
+                        <span class="tag">Target-based</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All Male Jobs (45,230)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs for Female Section -->
+    <section id="jobs-female" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-female"></i>
+                    Jobs for Female
+                </h2>
+                <p class="category-section-subtitle">38,450 flexible and empowering opportunities</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="job-badge featured">Featured</span>
+                    </div>
+                    <h3 class="job-title">HR Manager</h3>
+                    <p class="company-name">People First Solutions</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹8-15 LPA</span>
+                    </div>
+                    <p class="job-description">Manage HR operations, recruitment, employee relations. MBA in HR preferred. Work-life balance ensured.</p>
+                    <div class="job-tags">
+                        <span class="tag">HR</span>
+                        <span class="tag">Management</span>
+                        <span class="tag">Work-Life Balance</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <span class="job-badge">Flexible</span>
+                    </div>
+                    <h3 class="job-title">Primary School Teacher</h3>
+                    <p class="company-name">Bright Future Academy</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹4-7 LPA</span>
+                    </div>
+                    <p class="job-description">Teach primary classes, develop curriculum, nurture young minds. B.Ed qualification required. Female-friendly environment.</p>
+                    <div class="job-tags">
+                        <span class="tag">Teaching</span>
+                        <span class="tag">Education</span>
+                        <span class="tag">B.Ed Required</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 2 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <span class="job-badge">Healthcare</span>
+                    </div>
+                    <h3 class="job-title">Staff Nurse</h3>
+                    <p class="company-name">HealthCare Plus Hospital</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span class="shift-info">Multiple Shifts</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-6 LPA</span>
+                    </div>
+                    <p class="job-description">Provide patient care, assist doctors, maintain medical records. GNM/BSc Nursing required. Accommodation provided.</p>
+                    <div class="job-tags">
+                        <span class="tag">Nursing</span>
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Accommodation</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 3 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span class="job-badge">Work from Home</span>
+                    </div>
+                    <h3 class="job-title">Content Writer</h3>
+                    <p class="company-name">Digital Marketing Hub</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote/Work from Home</span>
+                        <span><i class="fas fa-clock"></i> Flexible Hours</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-6 LPA</span>
+                    </div>
+                    <p class="job-description">Create engaging content, blog posts, social media content. Perfect for homemakers seeking flexible work options.</p>
+                    <div class="job-tags">
+                        <span class="tag">Content Writing</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">Flexible</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All Female Jobs (38,450)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs for Freshers Section -->
+    <section id="jobs-freshers" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Jobs for Freshers
+                </h2>
+                <p class="category-section-subtitle">62,180 entry-level opportunities to start your career</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="job-badge featured">Fresher Friendly</span>
+                    </div>
+                    <h3 class="job-title">Junior Software Developer</h3>
+                    <p class="company-name">TechStart Solutions</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-5 LPA</span>
+                    </div>
+                    <p class="job-description">Learn and develop web applications using modern technologies. Training provided. Computer Science graduates preferred.</p>
+                    <div class="job-tags">
+                        <span class="tag">Fresher</span>
+                        <span class="tag">Training</span>
+                        <span class="tag">Web Development</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="job-badge">Internship</span>
+                    </div>
+                    <h3 class="job-title">Marketing Intern</h3>
+                    <p class="company-name">Growth Marketing Co.</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana</span>
+                        <span><i class="fas fa-clock"></i> 6 months</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹15,000/month</span>
+                    </div>
+                    <p class="job-description">Support digital marketing campaigns, social media management, content creation. MBA/BBA students welcome.</p>
+                    <div class="job-tags">
+                        <span class="tag">Internship</span>
+                        <span class="tag">Digital Marketing</span>
+                        <span class="tag">Social Media</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 2 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="job-badge">Entry Level</span>
+                    </div>
+                    <h3 class="job-title">Customer Service Executive</h3>
+                    <p class="company-name">CustomerCare Solutions</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹2-4 LPA</span>
+                    </div>
+                    <p class="job-description">Handle customer queries, provide support via phone and chat. Good communication skills required. Any graduate can apply.</p>
+                    <div class="job-tags">
+                        <span class="tag">Customer Service</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Any Graduate</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 3 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="job-badge">Training Provided</span>
+                    </div>
+                    <h3 class="job-title">Data Entry Operator</h3>
+                    <p class="company-name">DataPro Services</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹2-3 LPA</span>
+                    </div>
+                    <p class="job-description">Accurate data entry, maintain databases, basic computer operations. Typing speed 30+ WPM preferred.</p>
+                    <div class="job-tags">
+                        <span class="tag">Data Entry</span>
+                        <span class="tag">Computer Skills</span>
+                        <span class="tag">Typing</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 4 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All Fresher Jobs (62,180)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Jobs Section -->
+    <section id="jobs-government" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-landmark"></i>
+                    Government Jobs
+                </h2>
+                <p class="category-section-subtitle">15,670 secure positions in public sector</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="job-badge government">Government</span>
+                    </div>
+                    <h3 class="job-title">Bank Clerk</h3>
+                    <p class="company-name">State Bank of India</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Multiple Locations</span>
+                        <span><i class="fas fa-clock"></i> Permanent</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹4-7 LPA</span>
+                    </div>
+                    <p class="job-description">Handle banking operations, customer service, cash transactions. Graduate degree required. Exam-based selection.</p>
+                    <div class="job-tags">
+                        <span class="tag">Banking</span>
+                        <span class="tag">Permanent</span>
+                        <span class="tag">Exam Based</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 5 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <span class="job-badge government">Railway</span>
+                    </div>
+                    <h3 class="job-title">Railway Ticket Collector</h3>
+                    <p class="company-name">Indian Railways</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Pan India</span>
+                        <span><i class="fas fa-clock"></i> Permanent</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-6 LPA</span>
+                    </div>
+                    <p class="job-description">Check tickets, assist passengers, ensure safety protocols. 12th pass eligible. Physical fitness required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Railway</span>
+                        <span class="tag">12th Pass</span>
+                        <span class="tag">Physical Fitness</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 week ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="job-badge government">Police</span>
+                    </div>
+                    <h3 class="job-title">Police Constable</h3>
+                    <p class="company-name">State Police Department</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Uttar Pradesh</span>
+                        <span><i class="fas fa-clock"></i> Permanent</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹3-5 LPA</span>
+                    </div>
+                    <p class="job-description">Maintain law and order, patrol duties, crime prevention. Physical and written test required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Police</span>
+                        <span class="tag">Physical Test</span>
+                        <span class="tag">Law & Order</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 3 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span class="job-badge government">Clerk</span>
+                    </div>
+                    <h3 class="job-title">Office Assistant</h3>
+                    <p class="company-name">District Collectorate</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh</span>
+                        <span><i class="fas fa-clock"></i> Permanent</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹2-4 LPA</span>
+                    </div>
+                    <p class="job-description">Administrative support, file management, data entry. Computer knowledge preferred. Graduate degree required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Administration</span>
+                        <span class="tag">Computer Skills</span>
+                        <span class="tag">Graduate</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 6 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All Government Jobs (15,670)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part-time Jobs Section -->
+    <section id="jobs-parttime" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-clock"></i>
+                    Part-time Jobs
+                </h2>
+                <p class="category-section-subtitle">28,940 flexible opportunities for extra income</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <span class="job-badge part-time">Part-time</span>
+                    </div>
+                    <h3 class="job-title">Home Tutor</h3>
+                    <p class="company-name">EduCare Tutoring</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Nearby Locations</span>
+                        <span><i class="fas fa-clock"></i> 2-4 hours/day</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹500-1500/day</span>
+                    </div>
+                    <p class="job-description">Teach students at their homes, flexible timings. Subject expertise in Math, Science, or English required.</p>
+                    <div class="job-tags">
+                        <span class="tag">Tutoring</span>
+                        <span class="tag">Flexible Hours</span>
+                        <span class="tag">Subject Expert</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <span class="job-badge part-time">Evening Shift</span>
+                    </div>
+                    <h3 class="job-title">Store Assistant</h3>
+                    <p class="company-name">QuickMart Retail</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Local Area</span>
+                        <span><i class="fas fa-clock"></i> 4-6 hours/day</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹8,000-12,000/month</span>
+                    </div>
+                    <p class="job-description">Assist customers, manage inventory, handle billing. Evening shift perfect for students and homemakers.</p>
+                    <div class="job-tags">
+                        <span class="tag">Retail</span>
+                        <span class="tag">Customer Service</span>
+                        <span class="tag">Evening Shift</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 2 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <span class="job-badge part-time">Remote</span>
+                    </div>
+                    <h3 class="job-title">Freelance Writer</h3>
+                    <p class="company-name">ContentCraft Agency</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Work from Home</span>
+                        <span><i class="fas fa-clock"></i> Flexible</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹300-800/article</span>
+                    </div>
+                    <p class="job-description">Write articles, blog posts, website content. Perfect for students and professionals seeking extra income.</p>
+                    <div class="job-tags">
+                        <span class="tag">Writing</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">Per Article</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 3 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <span class="job-badge part-time">Weekend</span>
+                    </div>
+                    <h3 class="job-title">Food Delivery Partner</h3>
+                    <p class="company-name">QuickEats Delivery</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> City Wide</span>
+                        <span><i class="fas fa-clock"></i> Weekends</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹300-600/day</span>
+                    </div>
+                    <p class="job-description">Deliver food orders during weekends. Own vehicle required. Earn extra income in your free time.</p>
+                    <div class="job-tags">
+                        <span class="tag">Delivery</span>
+                        <span class="tag">Weekend Only</span>
+                        <span class="tag">Own Vehicle</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 4 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All Part-time Jobs (28,940)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT & Technology Jobs Section -->
+    <section id="jobs-it" class="job-category-section">
+        <div class="container">
+            <div class="category-section-header">
+                <h2 class="category-section-title">
+                    <i class="fas fa-laptop-code"></i>
+                    IT & Technology Jobs
+                </h2>
+                <p class="category-section-subtitle">89,320 opportunities in India's growing tech sector</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="job-badge featured">Featured</span>
+                    </div>
+                    <h3 class="job-title">Full Stack Developer</h3>
+                    <p class="company-name">TechCorp India</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹12-25 LPA</span>
+                    </div>
+                    <p class="job-description">Develop end-to-end web applications using React, Node.js, and MongoDB. 3+ years experience required.</p>
+                    <div class="job-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <span class="job-badge hot">Hot</span>
+                    </div>
+                    <h3 class="job-title">Data Analyst</h3>
+                    <p class="company-name">DataInsights Solutions</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹8-15 LPA</span>
+                    </div>
+                    <p class="job-description">Analyze business data, create reports and dashboards. Proficiency in SQL, Python, and Tableau required.</p>
+                    <div class="job-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 2 days ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="job-badge new">New</span>
+                    </div>
+                    <h3 class="job-title">Android Developer</h3>
+                    <p class="company-name">MobileFirst Technologies</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹10-18 LPA</span>
+                    </div>
+                    <p class="job-description">Build native Android applications using Kotlin and Java. Experience with Firebase and REST APIs preferred.</p>
+                    <div class="job-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 6 hours ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <span class="job-badge urgent">Urgent</span>
+                    </div>
+                    <h3 class="job-title">Technical Support Engineer</h3>
+                    <p class="company-name">SupportTech Services</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                        <span><i class="fas fa-rupee-sign"></i> ₹4-8 LPA</span>
+                    </div>
+                    <p class="job-description">Provide technical support to customers, troubleshoot software issues. Good communication skills essential.</p>
+                    <div class="job-tags">
+                        <span class="tag">Technical Support</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Communication</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="job-posted">Posted 1 day ago</span>
+                        <a href="#" class="btn btn-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline-primary">View All IT Jobs (89,320)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section id="article" class="article-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Guide to Job Hunting in India</h2>
+                <p class="section-subtitle">Everything you need to know about finding the perfect job in today's competitive market</p>
+            </div>
+            
+            <div class="article-content">
+                <div class="article-intro">
+                    <img src="assets/images/job-market-india.jpg" alt="Job market trends in India" class="article-image">
+                    <p class="article-text">
+                        The Indian job market has evolved significantly in recent years, offering diverse opportunities across various sectors. 
+                        Whether you're a fresh graduate, experienced professional, or looking for a career change, understanding the current 
+                        landscape is crucial for success.
+                    </p>
+                </div>
+
+                <h3 class="article-heading">Current Job Market Trends in India</h3>
+                <p class="article-text">
+                    The job market in India is experiencing rapid transformation with the rise of digital technologies, 
+                    remote work culture, and emerging industries. Here are the key trends shaping employment opportunities:
+                </p>
+
+                <ul class="article-list">
+                    <li>Digital transformation driving demand for tech professionals</li>
+                    <li>Increased focus on skill-based hiring over traditional qualifications</li>
+                    <li>Growth in gig economy and freelance opportunities</li>
+                    <li>Remote and hybrid work models becoming mainstream</li>
+                    <li>Emphasis on continuous learning and upskilling</li>
+                    <li>Rise of startups creating new job categories</li>
+                </ul>
+
+                <h3 class="article-heading">Top Industries Hiring in 2024</h3>
+                <div class="article-table-container">
+                    <table class="article-table">
+                        <thead>
+                            <tr>
+                                <th>Industry</th>
+                                <th>Growth Rate</th>
+                                <th>Average Salary (LPA)</th>
+                                <th>Top Skills Required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Information Technology</td>
+                                <td>15-20%</td>
+                                <td>₹8-25 LPA</td>
+                                <td>Programming, Cloud, AI/ML</td>
+                            </tr>
+                            <tr>
+                                <td>Healthcare</td>
+                                <td>12-15%</td>
+                                <td>₹5-18 LPA</td>
+                                <td>Medical expertise, Digital health</td>
+                            </tr>
+                            <tr>
+                                <td>E-commerce</td>
+                                <td>18-25%</td>
+                                <td>₹6-20 LPA</td>
+                                <td>Digital marketing, Analytics</td>
+                            </tr>
+                            <tr>
+                                <td>Financial Services</td>
+                                <td>10-12%</td>
+                                <td>₹7-22 LPA</td>
+                                <td>Fintech, Risk management</td>
+                            </tr>
+                            <tr>
+                                <td>Education Technology</td>
+                                <td>20-30%</td>
+                                <td>₹5-15 LPA</td>
+                                <td>Content creation, Technology</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="article-heading">Essential Job Search Strategies</h3>
+                <div class="article-strategies">
+                    <div class="strategy-item">
+                        <img src="assets/images/resume-tips.jpg" alt="Resume writing tips" class="strategy-image">
+                        <div class="strategy-content">
+                            <h4 class="strategy-title">1. Craft a Compelling Resume</h4>
+                            <p class="strategy-text">
+                                Your resume is your first impression. Tailor it for each application, highlight relevant skills, 
+                                and quantify your achievements with specific numbers and results.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="strategy-item">
+                        <img src="assets/images/networking.jpg" alt="Professional networking" class="strategy-image">
+                        <div class="strategy-content">
+                            <h4 class="strategy-title">2. Build Professional Networks</h4>
+                            <p class="strategy-text">
+                                Leverage LinkedIn, attend industry events, and connect with professionals in your field. 
+                                Many job opportunities come through referrals and networking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="strategy-item">
+                        <img src="assets/images/skill-development.jpg" alt="Skill development and learning" class="strategy-image">
+                        <div class="strategy-content">
+                            <h4 class="strategy-title">3. Continuous Skill Development</h4>
+                            <p class="strategy-text">
+                                Stay updated with industry trends, learn new technologies, and obtain relevant certifications. 
+                                Employers value candidates who show commitment to growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="article-heading">Salary Expectations by Experience Level</h3>
+                <p class="article-text">
+                    Understanding salary benchmarks helps in negotiating better compensation packages. Here's a breakdown by experience:
+                </p>
+
+                <div class="salary-breakdown">
+                    <div class="salary-card">
+                        <h4 class="salary-level">Fresh Graduates (0-2 years)</h4>
+                        <p class="salary-range">₹3-8 LPA</p>
+                        <ul class="salary-details">
+                            <li>Entry-level positions</li>
+                            <li>Training and mentorship provided</li>
+                            <li>Focus on learning and skill building</li>
+                        </ul>
+                    </div>
+
+                    <div class="salary-card">
+                        <h4 class="salary-level">Mid-Level (3-7 years)</h4>
+                        <p class="salary-range">₹8-18 LPA</p>
+                        <ul class="salary-details">
+                            <li>Specialized roles and responsibilities</li>
+                            <li>Team leadership opportunities</li>
+                            <li>Project management experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="salary-card">
+                        <h4 class="salary-level">Senior Level (8+ years)</h4>
+                        <p class="salary-range">₹18-50+ LPA</p>
+                        <ul class="salary-details">
+                            <li>Strategic decision making</li>
+                            <li>Department leadership</li>
+                            <li>Mentoring and team building</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="article-heading">Frequently Asked Questions</h3>
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How long does it typically take to find a job in India?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The job search duration varies based on industry, experience level, and market conditions. 
+                            On average, it takes 2-6 months for most professionals. Fresh graduates might take 3-8 months, 
+                            while experienced professionals in high-demand fields may find opportunities within 1-3 months.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What are the most in-demand skills in the Indian job market?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Technical skills like programming (Python, Java, JavaScript), data analysis, cloud computing, 
+                            and AI/ML are highly sought after. Soft skills including communication, problem-solving, 
+                            adaptability, and leadership are equally important across all industries.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Should I consider remote work opportunities?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, remote work has become mainstream post-pandemic. It offers flexibility, access to global 
+                            opportunities, and better work-life balance. However, consider your work style, career goals, 
+                            and the nature of your role before making a decision.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How important are certifications for career growth?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Certifications can significantly boost your profile, especially in technical fields. 
+                            They demonstrate commitment to learning and validate your skills. Popular certifications 
+                            include AWS, Google Cloud, PMP, Six Sigma, and industry-specific credentials.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What's the best way to negotiate salary during job interviews?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Research industry standards, know your worth, and be prepared to justify your expectations 
+                            with concrete examples of your achievements. Consider the complete package including benefits, 
+                            growth opportunities, and work culture, not just the base salary.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="article-heading">Conclusion</h3>
+                <div class="article-conclusion">
+                    <img src="assets/images/career-success.jpg" alt="Career success and growth" class="conclusion-image">
+                    <p class="article-text">
+                        The Indian job market offers immense opportunities for those who are prepared and proactive. 
+                        Success in job hunting requires a combination of the right skills, strategic approach, and persistence. 
+                        Stay updated with industry trends, continuously improve your skills, and leverage platforms like 
+                        JobFinder India to discover the best opportunities that match your career aspirations.
+                    </p>
+                    <p class="article-text">
+                        Remember, finding the right job is not just about getting hired – it's about finding a role that 
+                        aligns with your career goals, values, and lifestyle preferences. Take time to research companies, 
+                        understand their culture, and ensure they offer the growth opportunities you seek.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How JobFinder India Works</h2>
+                <p class="section-subtitle">Your journey to the perfect job in just 3 simple steps</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3 class="step-title">Create Your Profile</h3>
+                    <p class="step-description">Sign up and build your professional profile with your skills, experience, and career preferences.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3 class="step-title">Search & Apply</h3>
+                    <p class="step-description">Browse jobs by category, location, or keywords. Apply to positions that match your profile with one click.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3 class="step-title">Get Hired</h3>
+                    <p class="step-description">Connect with employers, attend interviews, and land your dream job. We support you throughout the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Find Your Dream Job?</h2>
+                <p class="cta-subtitle">Join thousands of job seekers who have found their perfect career match through JobFinder India</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-large">Start Job Search</a>
+                    <a href="#" class="btn btn-outline btn-large">Post a Job</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">JobFinder India</h3>
+                    <p class="footer-description">Your trusted partner in finding the perfect job opportunities across India. Connecting talent with the right employers since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Job Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#jobs-male">Jobs for Male</a></li>
+                        <li><a href="#jobs-female">Jobs for Female</a></li>
+                        <li><a href="#jobs-freshers">Jobs for Freshers</a></li>
+                        <li><a href="#jobs-government">Government Jobs</a></li>
+                        <li><a href="#jobs-parttime">Part-time Jobs</a></li>
+                        <li><a href="#jobs-it">IT & Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@jobfinder-india.com</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobFinder India. All rights reserved. | Made with ❤️ for Indian job seekers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Results Modal -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Search Results</h3>
+                <span class="modal-close" id="modal-close">&times;</span>
+            </div>
+            <div class="modal-body" id="search-results">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/gh/Vedhata/By-VED@main/Jobs.js"></script>
+</body>
+</html>
